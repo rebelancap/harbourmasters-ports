@@ -1,0 +1,90 @@
+{
+  "_comment": "Edit the owner/repo, bundle IDs, icons, and descriptions. The generator reads the LATEST release of each repo and picks one iOS IPA (any .ipa not containing 'vision'/'xros') and one visionOS IPA (name contains 'vision' or 'xros'). Ports with no GitHub release yet are simply skipped — leave them listed and they appear automatically the day they ship.",
+  "sources": {
+    "ios": {
+      "name": "HarbourMasters Ports — iPhone & iPad",
+      "identifier": "com.rebelancap.harbourmastersports.ios",
+      "subtitle": "The HarbourMasters N64 ports, natively on iOS",
+      "description": "Pristine iOS ports of the HarbourMasters native N64 decompilation projects — Ship of Harkinian and friends. Bring your own ROM; the apps extract it on device.",
+      "website": "https://github.com/rebelancap/harbourmasters-ports",
+      "tintColor": "#606A94",
+      "iconURL": "https://raw.githubusercontent.com/rebelancap/harbourmasters-ports/main/assets/source-icon.png"
+    },
+    "visionos": {
+      "name": "HarbourMasters Ports — Apple Vision Pro",
+      "identifier": "com.rebelancap.harbourmastersports.visionos",
+      "subtitle": "HarbourMasters N64 ports in 2D and stereoscopic 3D",
+      "description": "Pristine Apple Vision Pro ports of the HarbourMasters native N64 decompilation projects, with a world-locked stereoscopic 3D mode. Bring your own ROM; the apps extract it on device.",
+      "website": "https://github.com/rebelancap/harbourmasters-ports",
+      "tintColor": "#606A94",
+      "iconURL": "https://raw.githubusercontent.com/rebelancap/harbourmasters-ports/main/assets/source-icon.png"
+    }
+  },
+  "apps": [
+    {
+      "name": "Ship of Harkinian",
+      "bundleIdentifier": "com.rebelancap.soh",
+      "repo": "rebelancap/Shipwright-ios",
+      "developerName": "rebelancap",
+      "subtitle": "Ocarina of Time for iPhone & Vision Pro",
+      "localizedDescription": "The Ship of Harkinian port of The Legend of Zelda: Ocarina of Time, running natively on Metal — the full quest with saves, the enhancements menu, texture-pack support, and on Apple Vision Pro a stereoscopic 3D mode. Ships with no game content: you supply your own Ocarina of Time ROM and the app extracts it on device.",
+      "iconURL": "https://raw.githubusercontent.com/rebelancap/harbourmasters-ports/main/assets/soh.png",
+      "tintColor": "#606A94",
+      "iosMinOS": "15.0",
+      "visionosMinOS": "2.0",
+      "screenshotURLs": []
+    },
+    {
+      "name": "2 Ship 2 Harkinian",
+      "bundleIdentifier": "com.rebelancap.2ship",
+      "repo": "rebelancap/2ship2harkinian-ios",
+      "developerName": "rebelancap",
+      "subtitle": "Majora's Mask for iPhone & Vision Pro",
+      "localizedDescription": "The 2 Ship 2 Harkinian port of The Legend of Zelda: Majora's Mask, running natively on Metal, with the enhancements menu, texture-pack support, and an Apple Vision Pro stereoscopic 3D mode. Ships with no game content: you supply your own Majora's Mask ROM and the app extracts it on device.",
+      "iconURL": "https://raw.githubusercontent.com/rebelancap/harbourmasters-ports/main/assets/2ship.png",
+      "tintColor": "#3E7A4E",
+      "iosMinOS": "15.0",
+      "visionosMinOS": "2.0",
+      "screenshotURLs": []
+    },
+    {
+      "name": "Starship",
+      "bundleIdentifier": "com.rebelancap.starship",
+      "repo": "rebelancap/Starship-ios",
+      "developerName": "rebelancap",
+      "subtitle": "Star Fox 64 for iPhone & Vision Pro",
+      "localizedDescription": "The Starship port of Star Fox 64, running natively on Metal, with an Apple Vision Pro stereoscopic 3D mode. Ships with no game content: you supply your own Star Fox 64 ROM and the app extracts it on device.",
+      "iconURL": "https://raw.githubusercontent.com/rebelancap/harbourmasters-ports/main/assets/starship.png",
+      "tintColor": "#2E5C8A",
+      "iosMinOS": "15.0",
+      "visionosMinOS": "2.0",
+      "screenshotURLs": []
+    },
+    {
+      "name": "SpaghettiKart",
+      "bundleIdentifier": "com.rebelancap.spaghettikart",
+      "repo": "rebelancap/SpaghettiKart-ios",
+      "developerName": "rebelancap",
+      "subtitle": "Mario Kart 64 for iPhone & Vision Pro",
+      "localizedDescription": "The SpaghettiKart port of Mario Kart 64, running natively on Metal, with an Apple Vision Pro stereoscopic 3D mode. Ships with no game content: you supply your own Mario Kart 64 ROM and the app extracts it on device.",
+      "iconURL": "https://raw.githubusercontent.com/rebelancap/harbourmasters-ports/main/assets/spaghettikart.png",
+      "tintColor": "#C4342B",
+      "iosMinOS": "15.0",
+      "visionosMinOS": "2.0",
+      "screenshotURLs": []
+    },
+    {
+      "name": "Ghostship",
+      "bundleIdentifier": "com.rebelancap.ghostship",
+      "repo": "rebelancap/Ghostship-ios",
+      "developerName": "rebelancap",
+      "subtitle": "A HarbourMasters N64 port for iPhone & Vision Pro",
+      "localizedDescription": "The Ghostship port, running natively on Metal, with an Apple Vision Pro stereoscopic 3D mode. Ships with no game content: you supply your own ROM and the app extracts it on device.",
+      "iconURL": "https://raw.githubusercontent.com/rebelancap/harbourmasters-ports/main/assets/ghostship.png",
+      "tintColor": "#6A5ACD",
+      "iosMinOS": "15.0",
+      "visionosMinOS": "2.0",
+      "screenshotURLs": []
+    }
+  ]
+}

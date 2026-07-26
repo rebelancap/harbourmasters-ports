@@ -1,0 +1,11 @@
+{
+  "name": "HarbourMasters Ports \u2014 iPhone & iPad",
+  "identifier": "com.rebelancap.harbourmastersports.ios",
+  "subtitle": "The HarbourMasters N64 ports, natively on iOS",
+  "description": "Pristine iOS ports of the HarbourMasters native N64 decompilation projects \u2014 Ship of Harkinian and friends. Bring your own ROM; the apps extract it on device.",
+  "website": "https://github.com/rebelancap/harbourmasters-ports",
+  "tintColor": "#606A94",
+  "iconURL": "https://raw.githubusercontent.com/rebelancap/harbourmasters-ports/main/assets/source-icon.png",
+  "apps": [],
+  "news": []
+}

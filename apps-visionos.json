@@ -1,0 +1,11 @@
+{
+  "name": "HarbourMasters Ports \u2014 Apple Vision Pro",
+  "identifier": "com.rebelancap.harbourmastersports.visionos",
+  "subtitle": "HarbourMasters N64 ports in 2D and stereoscopic 3D",
+  "description": "Pristine Apple Vision Pro ports of the HarbourMasters native N64 decompilation projects, with a world-locked stereoscopic 3D mode. Bring your own ROM; the apps extract it on device.",
+  "website": "https://github.com/rebelancap/harbourmasters-ports",
+  "tintColor": "#606A94",
+  "iconURL": "https://raw.githubusercontent.com/rebelancap/harbourmasters-ports/main/assets/source-icon.png",
+  "apps": [],
+  "news": []
+}
