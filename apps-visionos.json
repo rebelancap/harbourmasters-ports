@@ -69,6 +69,27 @@
           "minOSVersion": "2.0"
         }
       ]
+    },
+    {
+      "name": "Ghostship",
+      "bundleIdentifier": "com.rebelancap.ghostship",
+      "developerName": "rebelancap",
+      "subtitle": "A HarbourMasters N64 port for iPhone & Vision Pro",
+      "localizedDescription": "The Ghostship port, running natively on Metal, with an Apple Vision Pro stereoscopic 3D mode. Ships with no game content: you supply your own ROM and the app extracts it on device.",
+      "iconURL": "https://raw.githubusercontent.com/rebelancap/harbourmasters-ports/main/assets/ghostship.png",
+      "tintColor": "#6A5ACD",
+      "category": "games",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-07-26T16:17:18Z",
+          "localizedDescription": "First public release of Ghostship for iPhone and Apple Vision Pro \u2014 a native Metal N64 port. The full game with saves, the enhancements menu, in-app ROM extraction, game controllers + a tunable touch layout, 60/120 Hz, and on Vision Pro a stereoscopic 3D mode. Install via SideStore (see the README). Bring your own ROM; no game content included.",
+          "downloadURL": "https://github.com/rebelancap/Ghostship-ios/releases/download/v1.0.0/ghostship-1.0.0-visionOS.ipa",
+          "size": 8933006,
+          "minOSVersion": "2.0"
+        }
+      ]
     }
   ],
   "news": []
