@@ -27,6 +27,48 @@
           "minOSVersion": "15.0"
         }
       ]
+    },
+    {
+      "name": "2 Ship 2 Harkinian",
+      "bundleIdentifier": "com.rebelancap.2ship",
+      "developerName": "rebelancap",
+      "subtitle": "Majora's Mask for iPhone & Vision Pro",
+      "localizedDescription": "The 2 Ship 2 Harkinian port of The Legend of Zelda: Majora's Mask, running natively on Metal, with the enhancements menu, texture-pack support, and an Apple Vision Pro stereoscopic 3D mode. Ships with no game content: you supply your own Majora's Mask ROM and the app extracts it on device.",
+      "iconURL": "https://raw.githubusercontent.com/rebelancap/harbourmasters-ports/main/assets/2ship.png",
+      "tintColor": "#3E7A4E",
+      "category": "games",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-07-26T14:55:28Z",
+          "localizedDescription": "First public release of 2 Ship 2 Harkinian (The Legend of Zelda: Majora's Mask) for iPhone and Apple Vision Pro \u2014 a native Metal port. Full quest with saves, the enhancements menu, in-app ROM extraction, game controllers + a tunable touch layout, 60/120 Hz, texture-pack support, and on Vision Pro a stereoscopic 3D mode. Install via SideStore (see the README). Bring your own Majora's Mask ROM; no game content included.",
+          "downloadURL": "https://github.com/rebelancap/2ship2harkinian-ios/releases/download/v1.0.0/2ship-1.0.0-iOS.ipa",
+          "size": 14174683,
+          "minOSVersion": "15.0"
+        }
+      ]
+    },
+    {
+      "name": "SpaghettiKart",
+      "bundleIdentifier": "com.rebelancap.spaghettikart",
+      "developerName": "rebelancap",
+      "subtitle": "Mario Kart 64 for iPhone & Vision Pro",
+      "localizedDescription": "The SpaghettiKart port of Mario Kart 64, running natively on Metal, with an Apple Vision Pro stereoscopic 3D mode. Ships with no game content: you supply your own Mario Kart 64 ROM and the app extracts it on device.",
+      "iconURL": "https://raw.githubusercontent.com/rebelancap/harbourmasters-ports/main/assets/spaghettikart.png",
+      "tintColor": "#C4342B",
+      "category": "games",
+      "screenshotURLs": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "date": "2026-07-26T14:55:30Z",
+          "localizedDescription": "First public release of SpaghettiKart (Mario Kart 64) for iPhone and Apple Vision Pro \u2014 a native Metal port. Grand Prix, Time Trials and VS with saves, game controllers + a tunable touch layout, 60/120 Hz, and on Vision Pro a stereoscopic 3D mode. Install via SideStore (see the README). Bring your own Mario Kart 64 ROM; no game content included.",
+          "downloadURL": "https://github.com/rebelancap/SpaghettiKart-ios/releases/download/v1.0.0/spaghettikart-1.0.0-iOS.ipa",
+          "size": 7565909,
+          "minOSVersion": "15.0"
+        }
+      ]
     }
   ],
   "news": []
