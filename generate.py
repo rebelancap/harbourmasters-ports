@@ -16,6 +16,18 @@ import json, os, sys, io, zipfile, plistlib, fnmatch, urllib.request
 GH = "https://api.github.com"
 TOKEN = os.environ.get("GITHUB_TOKEN")
 HERE = os.path.dirname(os.path.abspath(__file__))
+ICON_BASE = "https://raw.githubusercontent.com/rebelancap/harbourmasters-ports/main/assets"
+
+
+def icon_url(cfg):
+    """Derive the app icon URL from the bundle-id slug and HARD-FAIL if the file is
+    missing — so a hand-set URL can never drift from where the asset actually lives
+    (four ports shipped broken icons in SideStore exactly because it could)."""
+    slug = cfg.get("slug") or cfg["bundleIdentifier"].rsplit(".", 1)[-1]
+    if not os.path.exists(os.path.join(HERE, "assets", f"{slug}.png")):
+        sys.exit(f"FATAL: missing assets/{slug}.png for {cfg['repo']} — "
+                 f"every app in config.json needs assets/<bundle-id-slug>.png")
+    return f"{ICON_BASE}/{slug}.png"
 
 
 def gh(url):
@@ -101,7 +113,7 @@ def build_app(cfg, rel, want_vision, prev):
         "developerName": cfg.get("developerName", ""),
         "subtitle": cfg.get("subtitle", ""),
         "localizedDescription": cfg.get("localizedDescription", ""),
-        "iconURL": cfg.get("iconURL", ""),
+        "iconURL": icon_url(cfg),
         "tintColor": cfg.get("tintColor", "#8a1a1a"),
         "category": "games",
         "screenshotURLs": cfg.get("screenshotURLs", []),
@@ -122,6 +134,10 @@ def write_source(kind, cfg, apps, out_path):
 def main():
     with open(os.path.join(HERE, "config.json")) as f:
         cfg = json.load(f)
+
+    # Hard-fail up front if any app's icon asset is missing, before touching the API.
+    for app in cfg["apps"]:
+        icon_url(app)
 
     prev_ios = load_existing(os.path.join(HERE, "apps-ios.json"))
     prev_vos = load_existing(os.path.join(HERE, "apps-visionos.json"))
