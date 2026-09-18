@@ -98,6 +98,19 @@
       "iosMinOS": "15.0",
       "visionosMinOS": "2.0",
       "screenshotURLs": []
+    },
+    {
+      "name": "PaperBoat",
+      "bundleIdentifier": "com.rebelancap.paperboat",
+      "repo": "rebelancap/PaperBoat-ios",
+      "developerName": "rebelancap",
+      "subtitle": "Paper Mario for iPhone & iPad",
+      "localizedDescription": "The PaperBoat port of Paper Mario, running natively on Metal \u2014 the full adventure with saves, the enhancements menu, widescreen, 60/120 Hz with ProMotion, game controllers and a tunable touch layout. Ships with no game content: you supply your own Paper Mario ROM and the app extracts it on device.",
+      "iconURL": "https://raw.githubusercontent.com/rebelancap/harbourmasters-ports/main/assets/paperboat.png",
+      "tintColor": "#4A5BA6",
+      "iosMinOS": "16.3",
+      "visionosMinOS": "2.0",
+      "screenshotURLs": []
     }
   ]
 }
