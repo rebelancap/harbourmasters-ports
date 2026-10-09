@@ -41,7 +41,8 @@ appear in the source automatically the day they ship.
 Naming follows the HarbourMasters convention (their CI ships `soh-mac` / `soh-windows`
 / `soh-linux`), extended with the port version and the Apple platform:
 
-- Each release attaches exactly **one iOS IPA and one visionOS IPA**:
+- Each release attaches exactly **one iOS IPA and one visionOS IPA** (an iOS-only port
+  attaches just the iOS IPA and is simply absent from the visionOS source):
 
   | Port | iOS asset | visionOS asset |
   | --- | --- | --- |
@@ -50,6 +51,8 @@ Naming follows the HarbourMasters convention (their CI ships `soh-mac` / `soh-wi
   | Starship | `starship-<version>-iOS.ipa` | `starship-<version>-visionOS.ipa` |
   | SpaghettiKart | `spaghettikart-<version>-iOS.ipa` | `spaghettikart-<version>-visionOS.ipa` |
   | Ghostship | `ghostship-<version>-iOS.ipa` | `ghostship-<version>-visionOS.ipa` |
+  | Lighthouse | `lighthouse-<version>-iOS.ipa` | `lighthouse-<version>-visionOS.ipa` |
+  | PaperBoat | `paperboat-<version>-iOS.ipa` | — (iOS only) |
 
   The only hard requirement is that the visionOS asset contains `vision` (or `xros`)
   and the iOS one does not — that string is how the generator tells them apart.
