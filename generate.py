@@ -89,7 +89,8 @@ def build_app(cfg, rel, want_vision, prev):
     url = asset["browser_download_url"]
     prev_versions = (prev or {}).get("versions", [])
     # Unchanged? keep the previous entry verbatim (no re-download of the IPA).
-    if prev_versions and prev_versions[0].get("downloadURL") == url:
+    if (prev_versions and prev_versions[0].get("downloadURL") == url
+            and prev_versions[0].get("size") == asset["size"]):
         versions = prev_versions
     else:
         tag = rel.get("tag_name", "1.0.0").lstrip("v")
